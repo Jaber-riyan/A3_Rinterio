@@ -12,6 +12,17 @@
     <script
       src="https://kit.fontawesome.com/b8034c1299.js"
       crossorigin="anonymous"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              paper: "url('./assets/bg.jpg')",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <header
@@ -276,7 +287,8 @@
             <h2 class="md:text-4xl text-3xl font-[700] text-center mb-6">
               Our Latest Portfolio
             </h2>
-            <p class="text-center md:w-[70%] mx-auto md:text-[1rem] text-sm text-[#494949]">
+            <p
+              class="text-center md:w-[70%] mx-auto md:text-[1rem] text-sm text-[#494949]">
               The barn house captivates with its blend of rustic charm and
               modern sophistication, featuring weathered wood, sleek metal
               accents.
@@ -349,6 +361,68 @@
       </div>
       <!-- latest portfolio section end  -->
     </main>
+
+    <!-- connect form section start  -->
+    <main class="md:py-24 py-8 bg-paper bg-no-repeat bg-center bg-cover">
+      <div class="md:w-[80%] w-11/12 mx-auto">
+        <!-- first part of this section start  -->
+        <div class="text-center mb-8">
+          <div class="text-center mb-4">
+            <button
+              class="py-2 px-4 rounded-3xl bg-[#ABEF5F33] hover:bg-[#acef5fc2]">
+              <i class="fa-solid fa-arrow-right"></i>
+              <span class="text-[#494949] font-[700] capitalize"
+                >Let’s Connect</span
+              >
+            </button>
+          </div>
+          <h2 class="md:text-4xl text-3xl font-[700] mb-6 text-[#212121]">
+            Let’s Discuss Next Project
+          </h2>
+          <p class="md:w-[60%] w-full text-[#494949] font-medium text-sm mx-auto">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <!-- first part of this section end  -->
+
+        <!-- second part of this section start  -->
+        <div class="grid md:grid-cols-2 gap-5">
+          <input
+            class="text-sm font-medium text-[#A0A0A0] py-5 px-5 rounded-full md:col-span-1 col-span-2 outline-[#ABEF5F]"
+            type="text"
+            placeholder="First Name*" />
+          <input
+            class="text-sm font-medium text-[#A0A0A0] py-5 px-5 rounded-full md:col-span-1 col-span-2 outline-[#ABEF5F]"
+            type="text"
+            placeholder="Last Name*" />
+          <input
+            class="text-sm font-medium text-[#A0A0A0] py-5 px-5 rounded-full md:col-span-1 col-span-2 outline-[#ABEF5F]"
+            type="number"
+            placeholder="Phone Number*" />
+          <input
+            class="text-sm font-medium text-[#A0A0A0] py-5 px-5 rounded-full md:col-span-1 col-span-2 outline-[#ABEF5F]"
+            type="email"
+            placeholder="Email Address*" />
+          <textarea
+            class="text-sm font-medium text-[#A0A0A0] py-5 px-5 rounded-[2rem] col-span-2 outline-[#ABEF5F]"
+            type="email"
+            rows="5"
+            placeholder="Write your message here"></textarea>
+          <button
+            class="hover:bg-[#8fee22] btn bg-[#ABEF5F] py-3 px-5 rounded-full col-span-2">
+            <span class="text-[#1C1C1C] font-[700] text-[1rem] capitalize"
+              >Send Mail</span
+            >
+            <i
+              class="fa-solid fa-arrow-right text-white bg-[#000] p-1 rounded-full -rotate-45"></i>
+          </button>
+        </div>
+        <!-- second part of this section end  -->
+      </div>
+    </main>
+    <!-- connect form section end  -->
+
     <footer class=""></footer>
   </body>
 </html>
