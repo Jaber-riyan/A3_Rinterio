@@ -12,6 +12,11 @@
     <script
       src="https://kit.fontawesome.com/b8034c1299.js"
       crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet" />
     <script>
       tailwind.config = {
         theme: {
@@ -19,12 +24,15 @@
             backgroundImage: {
               paper: "url('./assets/bg.jpg')",
             },
+            fontFamily: {
+              manrope: "'Manrope', sans-serif",
+            },
           },
         },
       };
     </script>
   </head>
-  <body>
+  <body class="font-manrope">
     <!-- header section start  -->
     <header
       class="w-11/12 mx-auto py-3 bg-gradient-to-t from-[#FFFFFF] to-[#FFFFFF] md:mb-28 mb-10">
@@ -322,8 +330,8 @@
               </div>
             </div>
             <div
-              class="border-2 border-[#E9E9E9] rounded-2xl p-6 bg-white md:col-span-1 md:mb-5 mb-3">
-              <img class="h-auto" src="./assets/img2.png" alt="" />
+              class="border-2 h-[90%] md:mb-5 border-[#E9E9E9] rounded-2xl p-6 bg-white md:col-span-1 ">
+              <img class="h-full w-full" src="./assets/img2.png" alt="" />
             </div>
           </div>
           <!-- first card section end  -->
@@ -331,8 +339,8 @@
           <!-- second card section start  -->
           <div class="grid md:grid-cols-4 md:gap-6 gap-3">
             <div
-              class="border-2 border-[#E9E9E9] rounded-2xl p-6 bg-white md:col-span-1 md:mb-5 order-3 md:order-1">
-              <img class="h-full" src="./assets/img3.png" alt="" />
+              class="border-2 border-[#E9E9E9] rounded-2xl p-6 bg-white md:col-span-1 md:mb-5 order-3 md:order-1 h-[90%] flex items-center">
+              <img class="h-full w-full" src="./assets/img3.png" alt="" />
             </div>
             <div
               class="border-2 bg-[#fff] border-[#E9E9E9] p-5 md:flex gap-6 rounded-2xl md:mb-6 text-left md:col-span-2 md:order-2 order-2">
@@ -355,8 +363,8 @@
               </div>
             </div>
             <div
-              class="border-2 border-[#E9E9E9] rounded-2xl p-6 bg-white md:col-span-1 md:mb-5 md:order-3 order-1">
-              <img class="h-full" src="./assets/img5.png" alt="" />
+              class="border-2 border-[#E9E9E9] rounded-2xl p-6 bg-white md:col-span-1 md:mb-5 md:order-3 order-1 h-[90%] flex items-center">
+              <img class="h-full w-full" src="./assets/img5.png" alt="" />
             </div>
           </div>
           <!-- second card section end  -->
@@ -441,7 +449,8 @@
           The barn house captivates with its blend of rustic charm and modern
           sophistication, featuring weathered wood, sleek metal accents.
         </p>
-        <ul class="grid md:grid-cols-5 justify-center text-center md:mb-12 mb-8 md:gap-0 gap-6">
+        <ul
+          class="grid md:grid-cols-5 justify-center text-center md:mb-12 mb-8 md:gap-0 gap-6">
           <li>
             <a class="text-[#E9E9E9] font-medium hover:text-[#bdbdbd]" href=""
               >Home</a
@@ -470,7 +479,7 @@
         </ul>
         <div class="text-center">
           <button
-            class="hover:bg-[#8fee22] btn bg-[#ABEF5F] py-3 px-5 rounded-full col-span-2  md:w-auto w-full">
+            class="hover:bg-[#8fee22] btn bg-[#ABEF5F] py-3 px-5 rounded-full col-span-2 md:w-auto w-full">
             <span class="text-[#1C1C1C] font-[700] text-[1rem] capitalize"
               >Book Consult</span
             >
